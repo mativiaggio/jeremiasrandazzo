@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" class="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeremias Randazzo</title>
+    <!-- ANIMATIONS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid">
+        <!-- NAVBAR -->
+        <div class="row">
+            <div class="col-12 gx-0">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Jeremias Randazzo</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="mx-auto"></div>
+                        <ul class="navbar-nav mb-2 mb-lg-0 navbar_container">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <div class="row index_header">
+            <div class="col-12 gx-0 index_header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 text-center index_header_container" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                            <div class="index_header_title text-center">
+                                <h1 class="index_title">Jeremias Randazzo</h1>
+                            </div>
+                            <button type="button" class="btn_gs btn btn-light text-center">GET STARTED</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row index_main" id="about">
+            <div class="col-12 gx-0 index_main">
+                <div class="container-fluid">
+                    <div class="row p-md-3">
+                        <div class="col-12 text-center">
+                            <img data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom" class="jerePic" src="assets/pics/jueves.jpg" alt="Jeremias">
+                            <p data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom" style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eos beatae aspernatur voluptates, unde numquam consequatur, deserunt perferendis quis doloremque fugiat ex optio quae magni enim incidunt in temporibus nisi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam iure possimus quod. Sapiente, porro voluptates voluptas voluptatem nulla nam, distinctio sed enim architecto quos atque quis nemo ducimus. Provident, expedita! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem facilis beatae vitae laborum quis voluptatibus veniam, culpa corporis voluptatum molestiae quisquam sapiente accusantium repellendus, nesciunt nihil exercitationem fugit eos deserunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ANIMATIONS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('bg-dark', 'shadow');
+        } else {
+          nav.classList.remove('bg-dark', 'shadow');
+        }
+      });
+
+    </script>
+  </body>
+</html>
