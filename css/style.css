@@ -77,4 +77,9 @@
   .index_main {
     height: 2000px;
   }
+}
+@media screen and (max-width: 455px) {
+  .index_header .index_header_title .index_title {
+    font-size: 60px;
+  }
 }/*# sourceMappingURL=style.css.map */
