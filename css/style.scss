@@ -1,5 +1,6 @@
 @import "colors";
 @import "fonts";
+@import "transitions";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
     margin: 0;
@@ -10,21 +11,33 @@
 }
 // NAVBAR
 .navbar{
-    transition: all 0.2s ease 0s;
+    transition: $transition02;
 }
 .navbar_container{
     li {
         a {
             margin-left: 50px;
+            font-size: large;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+            border-radius: 50px;
+            transition: $transition02;
+            &:hover{
+                background-color: $main_color;
+                border-radius: 50px;
+                text-shadow: none;
+            }
         }
     }
+}
+#navbarSupportedContent{
+    transition: $transition02;
 }
 // HEADER
 .index_header{
     height: 100vh;
     background:linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../assets/pics/feli.jpg);
     background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
+    background-attachment: scroll !important;
     background-position: center center !important;
     z-index: auto;
     background-size: cover !important;
@@ -54,11 +67,15 @@
             background-color: $second_color;
             border-color: $second_color;
         }
+        &:active{
+            background-color: $main_color;
+            border-color:$main_color;
+        }
     }
 }
 // INDEX MAIN
 .index_main{
-    height: 604px;
+    height: 100vh;
     background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../assets/pics/flowers.jpg);
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
@@ -71,16 +88,99 @@
     .jerePic{
         height: 200px;
         border-radius: 150px;
+        margin-top: 70px;
     }
 }
+// GALLERY
+.gallery{
+    background-image: url(../assets/pics/gallery_bg.jpg);
+    background-size: 50%;
+    .gallery_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px 20px 0 20px;
+    }
+    .gallery_container .heading{
+        width: 50%;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery_container .heading h3{
+        color: white;
+        font-size: 3em;
+        font-weight: bolder;
+        padding-bottom: 10px;
+        text-shadow: 4px 4px 4px black;
+    }
+    .gallery_container .heading h3 span{
+        font-weight: 100;
+    }
+    .gallery_container .box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .gallery_container .box .dream{
+        display: flex;
+        flex-direction: column;
+        width: 32.5%;
+    }
+    .gallery_container .box .dream img{
+        width: 100%;
+        margin-bottom: 15px;
+        cursor: pointer;
+        transition: $transition02;
+        &:hover{
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        }
+    }
+    @media only screen and (max-width: 769px){
+        .gallery_container .box{
+            flex-direction: column;
+        }
+        .gallery_container .box .dream{
+            width: 100%;
+        }
+    }
+    @media only screen and (max-width: 643px){
+        .gallery_container .heading{
+            width: 100%;
+        }
+        .gallery_container .heading h3{
+            font-size: 2em;
+        }
+    }
+}
+// FOOTER
+.footer{
+    height: 60vh;
+    background-color: black;
+}
 @media screen and (max-width:991px){
+    .nav_logo{
+        text-indent: 15px;
+    }
     .navbar_container{
+        width: 90px;
         li {
             a {
+                text-indent: 15px;
                 margin-left: 0px;
             }
         }
     }
+    .jerePic{
+        margin-top: 80px;
+    }
+    // .gallery_container .heading h3{
+    //     font-size: 50px;
+    // }
 }
 @media screen and (max-width: 700px){
     .index_header{
@@ -91,7 +191,7 @@
         }
     }
     .index_main{
-        height: 2000px;
+        height: 100vh;
     }
 }
 @media screen and  (max-width: 455px){

@@ -14,13 +14,26 @@
 
 .navbar_container li a {
   margin-left: 50px;
+  font-size: large;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  transition: all 0.2s ease 0s;
+}
+.navbar_container li a:hover {
+  background-color: #DEB841;
+  border-radius: 50px;
+  text-shadow: none;
+}
+
+#navbarSupportedContent {
+  transition: all 0.2s ease 0s;
 }
 
 .index_header {
   height: 100vh;
   background: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../assets/pics/feli.jpg);
   background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
+  background-attachment: scroll !important;
   background-position: center center !important;
   z-index: auto;
   background-size: cover !important;
@@ -52,9 +65,13 @@
   background-color: #DE9E36;
   border-color: #DE9E36;
 }
+.index_header .btn_gs:active {
+  background-color: #DEB841;
+  border-color: #DEB841;
+}
 
 .index_main {
-  height: 604px;
+  height: 100vh;
   background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../assets/pics/flowers.jpg);
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
@@ -68,11 +85,93 @@
 .index_main .jerePic {
   height: 200px;
   border-radius: 150px;
+  margin-top: 70px;
+}
+
+.gallery {
+  background-image: url(../assets/pics/gallery_bg.jpg);
+  background-size: 50%;
+}
+.gallery .gallery_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0px 20px 0 20px;
+}
+.gallery .gallery_container .heading {
+  width: 50%;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .gallery_container .heading h3 {
+  color: white;
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  text-shadow: 4px 4px 4px black;
+}
+.gallery .gallery_container .heading h3 span {
+  font-weight: 100;
+}
+.gallery .gallery_container .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gallery .gallery_container .box .dream {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+.gallery .gallery_container .box .dream img {
+  width: 100%;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+.gallery .gallery_container .box .dream img:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width: 769px) {
+  .gallery .gallery_container .box {
+    flex-direction: column;
+  }
+  .gallery .gallery_container .box .dream {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 643px) {
+  .gallery .gallery_container .heading {
+    width: 100%;
+  }
+  .gallery .gallery_container .heading h3 {
+    font-size: 2em;
+  }
+}
+
+.footer {
+  height: 60vh;
+  background-color: black;
 }
 
 @media screen and (max-width: 991px) {
+  .nav_logo {
+    text-indent: 15px;
+  }
+  .navbar_container {
+    width: 90px;
+  }
   .navbar_container li a {
+    text-indent: 15px;
     margin-left: 0px;
+  }
+  .jerePic {
+    margin-top: 80px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -80,7 +179,7 @@
     font-size: 100px;
   }
   .index_main {
-    height: 2000px;
+    height: 100vh;
   }
 }
 @media screen and (max-width: 455px) {
