@@ -11,12 +11,12 @@
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
-  <body>
+  <body class="body">
     <div class="container-fluid">
         <!-- NAVBAR -->
         <div class="row">
-            <div class="col-12 gx-0">
-                <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+            <div class="col-12">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 navbar_css">
                     <div class="container-fluid">
                       <a class="navbar-brand nav_logo" href="#">Jeremias Randazzo</a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,13 +26,13 @@
                         <div class="mx-auto"></div>
                         <ul class="navbar-nav mb-2 mb-lg-0 navbar_container">
                           <li class="nav-item">
-                            <a class="nav-link active nav_link" aria-current="page" href="#about">About</a>
+                            <a class="nav-link active nav_link" aria-current="page" href="#about">Sobre Mí</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active nav_link" aria-current="page" href="#gallery">Gallery</a>
+                            <a class="nav-link active nav_link" aria-current="page" href="#gallery">Galería</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active nav_link" aria-current="page" href="#">Contact</a>
+                            <a class="nav-link active nav_link" aria-current="page" href="#">Contacto</a>
                           </li>
                         </ul>
                       </div>
@@ -42,70 +42,27 @@
         </div>
         <div class="row index_header">
             <div class="col-12 gx-0 index_header">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 text-center index_header_container" data-aos="fade-up"
-                        data-aos-anchor-placement="top-center">
-                            <div class="index_header_title text-center">
-                                <h1 class="index_title">Jeremias Randazzo</h1>
-                            </div>
-                            <button type="button" class="btn_gs btn btn-light text-center">GET STARTED</button>
-                        </div>
+                <h1 class="index_title">Jeremias Randazzo</h1>
+                <div class="header_card1 text-center">
+                    <img src="img/jueves.jpg" alt="">
+                    <div class="divisor_line"></div>
+                    <h4>Fotógrafo Urbano</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum quod recusandae illo odit vitae, mollitia qui, explicabo laudantium itaque, impedit saepe deleniti.</p>
+                    <div class="card1_section">
+                        <button type="button" class="btn btn-light">Conocer más</button>
                     </div>
+                </div>
+                <div class="social_media">
+                    <a href="https://www.instagram.com/jotaoutoffocus/" target="_blank"><img style="margin-right: 15px;" src="img/icons/instagram.png" alt="instagram"></a>
+                    <a href="" target="_blank"><img src="img/icons/whatsapp.png" alt="whatssapp"></a>
                 </div>
             </div>
         </div>
-        <div class="row index_main" id="about">
-            <div class="col-12 gx-0">
-                <div class="container-fluid">
-                    <div class="row p-md-3">
-                        <div class="col-12 text-center about_container">
-                            <img data-aos="fade-up"
-                            data-aos-anchor-placement="top-bottom" class="jerePic" src="assets/pics/jueves.jpg" alt="Jeremias">
-                            <p data-aos="fade-up"
-                            data-aos-anchor-placement="top-bottom" style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eos beatae aspernatur voluptates, unde numquam consequatur, deserunt perferendis quis doloremque fugiat ex optio quae magni enim incidunt in temporibus nisi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam iure possimus quod. Sapiente, porro voluptates voluptas voluptatem nulla nam, distinctio sed enim architecto quos atque quis nemo ducimus. Provident, expedita! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem facilis beatae vitae laborum quis voluptatibus veniam, culpa corporis voluptatum molestiae quisquam sapiente accusantium repellendus, nesciunt nihil exercitationem fugit eos deserunt.</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="row" style="height: 400vh; background-color:blue;">
+            <div class="col">
+
             </div>
         </div>
-    </div>
-    <div loading="lazy" class="gallery" id="gallery">
-      <div class="gallery_container">
-        <div class="heading">
-          <h3>Mis Proyectos</h3>
-        </div>
-        <div class="box">
-          <div class="dream">
-            <img loading="lazy" src="assets/pics/388700x500.jpg">
-             <img loading="lazy" src="assets/pics/basilica.jpg">
-              <img loading="lazy" src="assets/pics/DSC_6397.jpg">
-               <img loading="lazy" src="assets/pics/editada3a1.jpg">
-                <img loading="lazy" src="assets/pics/edificios.jpg"> 
-                  <img loading="lazy" src="assets/pics/flowers.jpg">   
-          </div>   
-            <div class="dream">
-            <img loading="lazy" src="assets/pics/elpuente.jpg">
-             <img loading="lazy" src="assets/pics/enterthevoidfull.jpg">
-              <img loading="lazy" src="assets/pics/feli.jpg">
-               <img loading="lazy" class="gallery_photo" src="assets/pics/flor1FULL.jpg">
-                
-          </div>    
-            <div class="dream">
-            <img loading="lazy" src="assets/pics/fotografos.jpg">
-              <img loading="lazy" src="assets/pics/Luna11demayo.jpg">
-               <img loading="lazy" src="assets/pics/railway.jpg">
-                <img loading="lazy" src="assets/pics/Repeat.jpg"> 
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 gx-0 footer text-center">
-          <h1 style="color: white;">FOOTER</h1>
-        </div>
-      </div>
     </div>
     <!-- ANIMATIONS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -117,7 +74,7 @@
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       var nav = document.querySelector('nav');
 
       window.addEventListener('scroll', function () {
@@ -128,6 +85,6 @@
         }
       });
 
-    </script>
+    </script> -->
   </body>
 </html>
