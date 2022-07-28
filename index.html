@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body class="body">
     <div class="container-fluid">
         <!-- NAVBAR -->
         <div class="row">
             <div class="col-12">
-                <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 navbar_css">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 navbar_css bgcolor">
                     <div class="container-fluid">
                       <a class="navbar-brand nav_logo" href="#">Jeremias Randazzo</a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +34,7 @@
                             <a class="nav-link active nav_link" aria-current="page" href="#gallery">Galería</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active nav_link" aria-current="page" href="#">Contacto</a>
+                            <a class="nav-link active nav_link" aria-current="page" href="#contact">Contacto</a>
                           </li>
                         </ul>
                       </div>
@@ -42,49 +44,84 @@
         </div>
         <div class="row index_header">
             <div class="col-12 gx-0 index_header">
-                <h1 class="index_title">Jeremias Randazzo</h1>
-                <div class="header_card1 text-center">
-                    <img src="img/jueves.jpg" alt="">
-                    <div class="divisor_line"></div>
-                    <h4>Fotógrafo Urbano</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum quod recusandae illo odit vitae, mollitia qui, explicabo laudantium itaque, impedit saepe deleniti.</p>
-                    <div class="card1_section">
-                        <button type="button" class="btn btn-light">Conocer más</button>
-                    </div>
-                </div>
-                <div class="social_media">
-                    <a href="https://www.instagram.com/jotaoutoffocus/" target="_blank"><img style="margin-right: 15px;" src="img/icons/instagram.png" alt="instagram"></a>
-                    <a href="" target="_blank"><img src="img/icons/whatsapp.png" alt="whatssapp"></a>
+                <h1>JEREMIAS RANDAZZO</h1>
+                <div class="index_header_button">
+                    <a href="#" class="btn btn-light">jotaoutoffocus</a>
                 </div>
             </div>
         </div>
-        <div class="row" style="height: 400vh; background-color:blue;">
-            <div class="col">
-
+        <div class="row index_main" id="about">
+            <div class="col-12 gx-0 index_main">
+              <img data-aos="fade-up"
+              data-aos-duration="500" src="img/jueves.jpg" alt="jeremiasrandazzo">
+              <div data-aos="fade-up"
+              data-aos-duration="500" class="about_container">
+                <div class="about_content">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis totam, error dicta fugiat et alias qui obcaecati nesciunt. Minima dolor voluptas dolorem, magnam iusto a deserunt aut vel suscipit facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam deserunt debitis architecto quidem minima esse! Tempore natus, aliquid earum modi doloremque, inventore fuga eos maxime aliquam quisquam reprehenderit veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tempore qui, repellat officia, eum deleniti distinctio maxime quae perferendis ullam saepe fugiat quasi at veniam iure voluptas molestias voluptatum ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sequi vel iste dignissimos quibusdam nostrum recusandae unde optio alias doloribus error provident ea, modi ullam corporis? Deserunt doloremque sequi sunt!
+                </div>
+              </div>
             </div>
+        </div>
+        <div class="row index_gallery" id="gallery">
+          <div class="col-12 gx-0 index_gallery">
+            <div class="gallery_container">
+              <div class="heading">
+                <h3>Mis <span>Proyectos</span></h3>
+              </div>
+              <div class="gallery_box">
+                <div class="dream">
+                  <img loading="lazy" src="img/388700x500.jpg">
+                  <img loading="lazy" src="img/basilica.jpg">
+                  <img loading="lazy" src="img/DSC_6397.jpg">
+                  <img loading="lazy" src="img/edificios.jpg">
+                  <img loading="lazy" src="img/editada3a1.jpg">  
+                  <img loading="lazy" src="img/santi3840.jpg">
+                  <img loading="lazy" src="img/violin.jpg">
+                  <img loading="lazy" src="img/visiondetunel.jpg">               
+                </div>
+                <div class="dream">
+                  <img loading="lazy" src="img/elpuente.jpg">
+                  <img loading="lazy" src="img/enterthevoidfull.jpg">
+                  <img loading="lazy" src="img/feli.jpg">
+                  <img loading="lazy" src="img/flor1FULL.jpg">
+                  <img loading="lazy" src="img/flowers.jpg">
+                  <img loading="lazy" src="img/supermoonphone.jpg">  
+                </div>
+                <div class="dream">
+                  <img loading="lazy" src="img/fotografos.jpg">
+                  <img loading="lazy" src="img/Luna11demayo.jpg">
+                  <img loading="lazy" src="img/railway.jpg">
+                  <img loading="lazy" src="img/Repeat.jpg">
+                  <img loading="lazy" src="img/SanMartin3840.jpg">
+                  <img loading="lazy" src="img/Trafico.jpg">   
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="row" id="contact">
+          <div class="col-12 gx-0 contact">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 gx-0 footer">
+
+          </div>
         </div>
     </div>
     <!-- ANIMATIONS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration: 1000
+            duration: 500
         });
     </script>
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- <script type="text/javascript">
-      var nav = document.querySelector('nav');
-
-      window.addEventListener('scroll', function () {
-        if (window.pageYOffset > 100) {
-          nav.classList.add('bg-dark', 'shadow');
-        } else {
-          nav.classList.remove('bg-dark', 'shadow');
-        }
+    <script>
+      $(window).scroll(function(){
+    $('nav').toggleClass('scrolled', $(this).scrollTop()>50);
       });
-
-    </script> -->
+    </script>
   </body>
 </html>

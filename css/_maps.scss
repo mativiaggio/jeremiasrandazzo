@@ -1,0 +1,10 @@
+@mixin img_config($attch) {
+    background-repeat: no-repeat !important;
+    background-attachment: $attch !important;
+    background-position: center center !important;
+    z-index: auto;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+}

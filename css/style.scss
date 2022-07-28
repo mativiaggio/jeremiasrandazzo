@@ -1,170 +1,189 @@
 @import "colors";
 @import "fonts";
 @import "transitions";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "maps";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 .html{
     scroll-behavior: smooth;
 }
+.body{
+    background: url(../img/william-thomas-ny6tO4ItOEY-unsplash-min.jpg);
+    @include img_config(fixed);
+}
 // NAVBAR
+.bgcolor.scrolled{
+    background-color: black;
+}
 .navbar_css{
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(6px);
-    border-radius: 16px;
-    margin: 15px;
+    background-color: none;
 }
 .navbar{
-    transition: $transition02;
+    transition: $transition04;
 }
 .navbar_container{
     li {
         a {
+
             margin-left: 50px;
-            font-size: large;
+            font-size: medium;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-            border-radius: 50px;
+            border: 2px solid rgba(0, 0, 0, 0);
+            border-radius: 0px;
             transition: $transition02;
             &:hover{
-                background-color: $main_color;
-                border-radius: 50px;
-                text-shadow: none;
+                background-color: none;
+                border: 2px solid white;
+                border-radius: 0px;
             }
         }
     }
 }
 .nav_logo{
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    font-family: "Inter", sans-serif;
 }
 #navbarSupportedContent{
     transition: $transition02;
 }
-// HEADER
+
+// INDEX 2 HEADER
 .index_header{
     height: 100vh;
-    background: url(../img/theregisti-HSXIp58yPyI-unsplash.jpg);
-    background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     h1 {
-        position: absolute;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
         color: white;
-        margin-left: 20%;
-        font-family: "Roboto", sans-serif;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-        font-size: 100px;
-        top: 200px;
-        top: 100px;
-        right:15px;
-        letter-spacing: 5px;
+        font-size: 1400%;
+        font-weight: 700;
     }
-    .header_card1{
-        position: absolute;
-        height: 450px;
-        width: 350px;
-        margin: 15px;
-        background-color: rgba(255, 255, 255, 0.3);
-        box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(2px);
-        border-radius: 16px;
-        img {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            height: 100px;
-            border-radius: 100px;
-            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
-        }
-        .divisor_line{
-            height: 1px;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.5);
-
-        }
-        h4 {
-            margin-top: 10px;
-            color: rgb(255, 255, 255);
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-        }
-        p {
+    .index_header_button {
+        a {
+            font-family: 'Inter', sans-serif;
             color: white;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-        }
-        .card1_section{
-            height: 150px;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.3);
-            bottom: 0;
-            position: absolute;
-            border-radius: 0px 0px 16px 16px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            .btn {
-                margin: 10px;
-                width: 160px;
+            background-color: rgba(0, 0, 0, 0);
+            font-size: x-large;
+            border: 3px solid white;
+            border-radius: 0px;
+            transition: 0.2s ease;
+            &:hover{
                 background-color: white;
-                border-radius: 20px;
-                transition: all 0.2s ease-in 0s;
-                &:hover{
-                    background-color: rgba(255, 255, 255, 0.3,);
-                }
+                color: black;
             }
-        }
-    }
-    .social_media{
-        height: 45px;
-        width: 6%;
-        background-color: rgba(255, 255, 255, 0.3);
-        box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(2px);
-        position: absolute;
-        right: 15px;
-        bottom: 15px;
-        border-radius: 16px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-            height: 25px;
         }
     }
 }
-@media screen and (max-width:991px){
-    .nav_logo{
-        text-indent: 15px;
+.index_main{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        height: 250px;
+        border-radius: 50%;
+        border: 2px solid white;
     }
-    .navbar_container{
-        width: 90px;
-        li {
-            a {
-                text-indent: 15px;
-                margin-left: 0px;
+    .about_container{
+        background-color: white;
+        height: 250px;
+        width: 90%;
+        margin-top: 15px;
+        border-radius: 5px;
+        .about_content{
+            padding: 20px;
+            font-family: "Inter", sans-serif;
+            text-align: center;
+        }
+    }
+}
+.index_gallery{
+    height:500vh;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    .gallery_container{
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 40px 20px 0 20px;
+        .heading{
+            width: 50%;
+            padding-bottom: 50px;
+            h3{
+                font-family: "Inter", sans-serif;
+                font-size: 3em;
+                font-weight: bolder;
+                padding-bottom: 10px;
+                color: black;
+                border-bottom: 3px solid rgb(0, 0, 0);
+                span{
+                    font-weight: 100;
+                    color: black;
+                }
+            }
+        }
+          .gallery_box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .dream{
+                display: flex;
+                flex-direction: column;
+                width: 32.5%;
+                img{
+                    width: 100%;
+                    padding-bottom: 15px;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .btn{
+            margin: 40px 0 70px 0;
+            background: #222;
+            padding: 15px 40px ;
+            border-radius: 5px;
+            a{
+                color: #fff;
+                font-size: 1.2em;
+                text-decoration: none;
+                font-weight: bolder;
+                letter-spacing: 3px;
             }
         }
     }
-    .index_header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+}
+.contact{
+    height: 100vh;
+}
+.footer{
+    height: 70vh;
+    background-color: black;
+}
+@media only screen and (max-width: 769px){
+    .gallery_container .gallery_box{
         flex-direction: column;
-        h1 {
-            display: none;
-            visibility: hidden;
-        }
+    }
+    .gallery_container .gallery_box .dream{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 643px){
+    .gallery_container .heading{
+        width: 100%;
+    }
+    .gallery_container .heading h3{
+        font-size: 1em;
     }
 }
