@@ -1,0 +1,30 @@
+@use "../sass/colors" as *;
+@use "../sass/fonts" as *; 
+@use "../sass/components" as *;
+@use "../sass/sizing" as *;
+@use "../sass/transitions" as *;
+
+// INDEX HEADER STYLE MOBILE
+@mixin index-title-mobile {
+    font-family: $ff-main;
+    font-weight: $fw-700;
+    font-size: 4em;
+    text-align: center;
+    color: $clr-main-light;
+}
+@mixin index-h-button-mobile {
+    font-family: $ff-main;
+    font-weight: $fw-700;
+    font-size: 1.5em;
+    text-align: center;
+    color: $clr-main-light;
+    background-color: $clr-transparent;
+    border: 0.25em solid $clr-main-light;
+    border-radius: 0px;
+    transition: $t-02-eo;
+    &:hover{
+        background-color: $clr-main-light;
+        border: 0.25em solid $clr-main-light;
+        color: $clr-main-dark;
+    }
+}

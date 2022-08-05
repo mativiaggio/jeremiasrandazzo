@@ -1,189 +1,191 @@
-@import "colors";
-@import "fonts";
-@import "transitions";
-@import "maps";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@use "../sass/colors" as *;
+@use "../sass/fonts" as *; 
+@use "../sass/components" as *;
+@use "../sass/sizing" as *;
+@use "../sass/mixins" as *;
+@use "../sass/transitions" as *;
+
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", sans-serif;
+    font-family: $ff-main;
+    font: inherit;
 }
-.html{
-    scroll-behavior: smooth;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-.body{
-    background: url(../img/william-thomas-ny6tO4ItOEY-unsplash-min.jpg);
-    @include img_config(fixed);
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 // NAVBAR
 .bgcolor.scrolled{
-    background-color: black;
+  background-color: black;
 }
-.navbar_css{
-    background-color: none;
-}
-.navbar{
-    transition: $transition04;
-}
-.navbar_container{
-    li {
-        a {
+// .navbar_css{
+//   background-color: none;
+// }
+// .navbar{
+//   transition: all 0.2s ease 0s;
+// }
+// .navbar_container{
+//   li {
+//       a {
 
-            margin-left: 50px;
-            font-size: medium;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-            border: 2px solid rgba(0, 0, 0, 0);
-            border-radius: 0px;
-            transition: $transition02;
-            &:hover{
-                background-color: none;
-                border: 2px solid white;
-                border-radius: 0px;
-            }
-        }
+//           margin-left: 50px;
+//           font-size: medium;
+//           text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+//           border: 2px solid rgba(0, 0, 0, 0);
+//           border-radius: 0px;
+//           transition: all 0.2s ease 0s;
+//           &:hover{
+//               background-color: none;
+//               border: 2px solid white;
+//               border-radius: 0px;
+//           }
+//       }
+//   }
+// }
+// .nav_logo{
+//   text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+//   font-family: "Inter", sans-serif;
+// }
+// #navbarSupportedContent{
+//   transition: all 0.2s ease 0s;
+// }
+
+// INDEX HEADER
+.index-header {
+  height: $h-100;
+  background-image: url(../img/william-thomas-ny6tO4ItOEY-unsplash-min.jpg);
+  @include img_dft_config(fixed);
+  div {
+    @include flex-col-cen-cen;
+    .index-header-title {
+      @include index-title-mobile;
     }
-}
-.nav_logo{
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
-    font-family: "Inter", sans-serif;
-}
-#navbarSupportedContent{
-    transition: $transition02;
+    button {
+      @include index-h-button-mobile;
+    }
+  }
 }
 
-// INDEX 2 HEADER
-.index_header{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h1 {
-        text-align: center;
-        font-family: 'Inter', sans-serif;
-        color: white;
-        font-size: 1400%;
-        font-weight: 700;
-    }
-    .index_header_button {
-        a {
-            font-family: 'Inter', sans-serif;
-            color: white;
-            background-color: rgba(0, 0, 0, 0);
-            font-size: x-large;
-            border: 3px solid white;
-            border-radius: 0px;
-            transition: 0.2s ease;
-            &:hover{
-                background-color: white;
-                color: black;
-            }
-        }
-    }
-}
-.index_main{
-    height: 100vh;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+// INDEX MAIN ABOUT-ME
+.index-main {
+  height: $h-100;
+  @media screen and (max-width: 62em){
+    height: 150vh;
+  }
+
+  .about-me-pic {
+    margin-top: $m-nv;
+    @include flex-custom(column, center, center);
     img {
-        height: 250px;
-        border-radius: 50%;
-        border: 2px solid white;
+      height: $h-am-d;
+      border-radius: 0.5em;
+      @media screen and (max-width: 62em){
+        height: $h-am-t;
+      }
+      @media screen and (max-width: 48em){
+        height: $h-am-m;
+      }
     }
-    .about_container{
-        background-color: white;
-        height: 250px;
-        width: 90%;
-        margin-top: 15px;
-        border-radius: 5px;
-        .about_content{
-            padding: 20px;
-            font-family: "Inter", sans-serif;
-            text-align: center;
+  }
+  .about-me-text {
+    margin-top: $m-nv;
+    @include flex-custom(column, center, center);
+    @media screen and (max-width: 62em){
+      margin-top: 0;
+      width: $w-100;
+      @include flex-custom(column, flex-start, center)
+    }
+    .text-container {
+      width: 70%;
+      h2 {
+        letter-spacing: 0.1em;
+        font-size: 40px;
+        line-height: 47px;
+        @media screen and (max-width: 62em){
+          text-align: center;
         }
-    }
-}
-.index_gallery{
-    height:500vh;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(2px);
-    .gallery_container{
-        padding-top: 60px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 40px 20px 0 20px;
-        .heading{
-            width: 50%;
-            padding-bottom: 50px;
-            h3{
-                font-family: "Inter", sans-serif;
-                font-size: 3em;
-                font-weight: bolder;
-                padding-bottom: 10px;
-                color: black;
-                border-bottom: 3px solid rgb(0, 0, 0);
-                span{
-                    font-weight: 100;
-                    color: black;
-                }
-            }
+      }
+      p {
+        font-size: 16px;
+        font-weight: $fw-300;
+        line-height: 1.3em;
+        letter-spacing: 0.15em;
+        color: $clr-main-semi-dark;
+        
+        @media screen and (max-width: 62em){
+          text-align: center;
         }
-          .gallery_box{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            .dream{
-                display: flex;
-                flex-direction: column;
-                width: 32.5%;
-                img{
-                    width: 100%;
-                    padding-bottom: 15px;
-                    border-radius: 5px;
-                }
-            }
-        }
-        .btn{
-            margin: 40px 0 70px 0;
-            background: #222;
-            padding: 15px 40px ;
-            border-radius: 5px;
-            a{
-                color: #fff;
-                font-size: 1.2em;
-                text-decoration: none;
-                font-weight: bolder;
-                letter-spacing: 3px;
-            }
-        }
+      }
     }
-}
-.contact{
-    height: 100vh;
-}
-.footer{
-    height: 70vh;
-    background-color: black;
-}
-@media only screen and (max-width: 769px){
-    .gallery_container .gallery_box{
-        flex-direction: column;
-    }
-    .gallery_container .gallery_box .dream{
-        width: 100%;
-    }
-}
-@media only screen and (max-width: 643px){
-    .gallery_container .heading{
-        width: 100%;
-    }
-    .gallery_container .heading h3{
-        font-size: 1em;
-    }
+  }
 }

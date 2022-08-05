@@ -1,0 +1,33 @@
+@use "colors" as *;
+
+// DEFAULT IMG CONFIGURATION
+@mixin img_dft_config($attach) {
+    background-repeat: no-repeat !important;
+    background-attachment: $attach !important;
+    background-position: center center !important;
+    z-index: auto;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+}
+
+// DISPLAY FLEX COLUMN CENTER CENTER
+@mixin flex-col-cen-cen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// DISPLAY FLEX CUSTOM
+@mixin flex-custom($dir, $jc, $ai) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+}
+// DEFAULT TEXT SHADOW
+@mixin dt-shadow($color) {
+    text-shadow:  0px 4px 4px $color;
+}

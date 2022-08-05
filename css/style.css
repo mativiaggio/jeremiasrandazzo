@@ -1,16 +1,91 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font: inherit;
 }
 
-.html {
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
   scroll-behavior: smooth;
 }
 
-.body {
-  background: url(../img/william-thomas-ny6tO4ItOEY-unsplash-min.jpg);
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.bgcolor.scrolled {
+  background-color: black;
+}
+
+.index-header {
+  height: 100vh;
+  background-image: url(../img/william-thomas-ny6tO4ItOEY-unsplash-min.jpg);
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
   background-position: center center !important;
@@ -20,178 +95,104 @@
   -moz-background-size: cover !important;
   -o-background-size: cover !important;
 }
-
-.bgcolor.scrolled {
-  background-color: black;
-}
-
-.navbar_css {
-  background-color: none;
-}
-
-.navbar {
-  transition: all 0.4s ease 0s;
-}
-
-.navbar_container li a {
-  margin-left: 50px;
-  font-size: medium;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-  border: 2px solid rgba(0, 0, 0, 0);
-  border-radius: 0px;
-  transition: all 0.2s ease 0s;
-}
-.navbar_container li a:hover {
-  background-color: none;
-  border: 2px solid white;
-  border-radius: 0px;
-}
-
-.nav_logo {
-  text-shadow: 0px 4px 4px rgb(0, 0, 0);
-  font-family: "Inter", sans-serif;
-}
-
-#navbarSupportedContent {
-  transition: all 0.2s ease 0s;
-}
-
-.index_header {
-  height: 100vh;
+.index-header div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.index_header h1 {
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  color: white;
-  font-size: 1400%;
+.index-header div .index-header-title {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
+  font-size: 4em;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
 }
-.index_header .index_header_button a {
-  font-family: "Inter", sans-serif;
-  color: white;
+.index-header div button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
   background-color: rgba(0, 0, 0, 0);
-  font-size: x-large;
-  border: 3px solid white;
+  border: 0.25em solid hsl(0deg, 0%, 100%);
   border-radius: 0px;
-  transition: 0.2s ease;
+  transition: all 0.1s ease-out 0s;
 }
-.index_header .index_header_button a:hover {
-  background-color: white;
-  color: black;
+.index-header div button:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  border: 0.25em solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 0%);
 }
 
-.index_main {
+.index-main {
   height: 100vh;
-  background-color: black;
+}
+@media screen and (max-width: 62em) {
+  .index-main {
+    height: 150vh;
+  }
+}
+.index-main .about-me-pic {
+  margin-top: 4.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.index_main img {
-  height: 250px;
-  border-radius: 50%;
-  border: 2px solid white;
+.index-main .about-me-pic img {
+  height: 31.25em;
+  border-radius: 0.5em;
 }
-.index_main .about_container {
-  background-color: white;
-  height: 250px;
-  width: 90%;
-  margin-top: 15px;
-  border-radius: 5px;
+@media screen and (max-width: 62em) {
+  .index-main .about-me-pic img {
+    height: 21.875em;
+  }
 }
-.index_main .about_container .about_content {
-  padding: 20px;
-  font-family: "Inter", sans-serif;
-  text-align: center;
+@media screen and (max-width: 48em) {
+  .index-main .about-me-pic img {
+    height: 17.5em;
+  }
 }
-
-.index_gallery {
-  height: 500vh;
-  background: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-}
-.index_gallery .gallery_container {
-  padding-top: 60px;
+.index-main .about-me-text {
+  margin-top: 4.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  margin: 40px 20px 0 20px;
 }
-.index_gallery .gallery_container .heading {
-  width: 50%;
-  padding-bottom: 50px;
-}
-.index_gallery .gallery_container .heading h3 {
-  font-family: "Inter", sans-serif;
-  font-size: 3em;
-  font-weight: bolder;
-  padding-bottom: 10px;
-  color: black;
-  border-bottom: 3px solid rgb(0, 0, 0);
-}
-.index_gallery .gallery_container .heading h3 span {
-  font-weight: 100;
-  color: black;
-}
-.index_gallery .gallery_container .gallery_box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.index_gallery .gallery_container .gallery_box .dream {
-  display: flex;
-  flex-direction: column;
-  width: 32.5%;
-}
-.index_gallery .gallery_container .gallery_box .dream img {
-  width: 100%;
-  padding-bottom: 15px;
-  border-radius: 5px;
-}
-.index_gallery .gallery_container .btn {
-  margin: 40px 0 70px 0;
-  background: #222;
-  padding: 15px 40px;
-  border-radius: 5px;
-}
-.index_gallery .gallery_container .btn a {
-  color: #fff;
-  font-size: 1.2em;
-  text-decoration: none;
-  font-weight: bolder;
-  letter-spacing: 3px;
-}
-
-.contact {
-  height: 100vh;
-}
-
-.footer {
-  height: 70vh;
-  background-color: black;
-}
-
-@media only screen and (max-width: 769px) {
-  .gallery_container .gallery_box {
+@media screen and (max-width: 62em) {
+  .index-main .about-me-text {
+    margin-top: 0;
+    width: 100vw;
+    display: flex;
     flex-direction: column;
-  }
-  .gallery_container .gallery_box .dream {
-    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
-@media only screen and (max-width: 643px) {
-  .gallery_container .heading {
-    width: 100%;
+.index-main .about-me-text .text-container {
+  width: 70%;
+}
+.index-main .about-me-text .text-container h2 {
+  letter-spacing: 0.1em;
+  font-size: 40px;
+  line-height: 47px;
+}
+@media screen and (max-width: 62em) {
+  .index-main .about-me-text .text-container h2 {
+    text-align: center;
   }
-  .gallery_container .heading h3 {
-    font-size: 1em;
+}
+.index-main .about-me-text .text-container p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.3em;
+  letter-spacing: 0.15em;
+  color: hsl(0deg, 0%, 38%);
+}
+@media screen and (max-width: 62em) {
+  .index-main .about-me-text .text-container p {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
