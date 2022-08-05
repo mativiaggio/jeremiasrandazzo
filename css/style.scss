@@ -9,12 +9,14 @@
 * {
     font-family: $ff-main;
     font: inherit;
+    scroll-behavior: smooth;
 }
 /* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  // border: 1px solid red;
 }
 
 /* Remove default margin */
@@ -70,55 +72,40 @@ select {
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
+// @media (prefers-reduced-motion: reduce) {
+//   html:focus-within {
+//    scroll-behavior: auto;
+//   }
   
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
+//   *,
+//   *::before,
+//   *::after {
+//     animation-duration: 0.01ms !important;
+//     animation-iteration-count: 1 !important;
+//     transition-duration: 0.01ms !important;
+//     scroll-behavior: auto !important;
+//   }
+// }
 // NAVBAR
 .bgcolor.scrolled{
   background-color: black;
 }
-// .navbar_css{
-//   background-color: none;
-// }
-// .navbar{
-//   transition: all 0.2s ease 0s;
-// }
-// .navbar_container{
-//   li {
-//       a {
+.navbar_css{
+  background-color: none;
+}
+.navbar{
+  transition: all 0.2s ease 0s;
+}
+.navbar_container {
+  margin-left: 25px;
 
-//           margin-left: 50px;
-//           font-size: medium;
-//           text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-//           border: 2px solid rgba(0, 0, 0, 0);
-//           border-radius: 0px;
-//           transition: all 0.2s ease 0s;
-//           &:hover{
-//               background-color: none;
-//               border: 2px solid white;
-//               border-radius: 0px;
-//           }
-//       }
-//   }
-// }
-// .nav_logo{
-//   text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
-//   font-family: "Inter", sans-serif;
-// }
-// #navbarSupportedContent{
-//   transition: all 0.2s ease 0s;
-// }
+}
+.nav_logo{
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+}
+#navbarSupportedContent{
+  transition: all 0.2s ease 0s;
+}
 
 // INDEX HEADER
 .index-header {
@@ -132,6 +119,14 @@ select {
     }
     button {
       @include index-h-button-mobile;
+      .index-button {
+        text-decoration: none;
+        color: $clr-main-light;
+        transition: all 0.2s ease 0s;
+        &:hover {
+          color: black;
+        }
+      }
     }
   }
 }

@@ -1,6 +1,7 @@
 * {
   font-family: "Roboto", sans-serif;
   font: inherit;
+  scroll-behavior: smooth;
 }
 
 /* Box sizing rules */
@@ -64,23 +65,28 @@ select {
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-  *,
-*::before,
-*::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
 .bgcolor.scrolled {
   background-color: black;
+}
+
+.navbar_css {
+  background-color: none;
+}
+
+.navbar {
+  transition: all 0.2s ease 0s;
+}
+
+.navbar_container {
+  margin-left: 25px;
+}
+
+.nav_logo {
+  text-shadow: 0px 4px 4px rgb(0, 0, 0);
+}
+
+#navbarSupportedContent {
+  transition: all 0.2s ease 0s;
 }
 
 .index-header {
@@ -123,6 +129,14 @@ select {
   background-color: hsl(0deg, 0%, 100%);
   border: 0.25em solid hsl(0deg, 0%, 100%);
   color: hsl(0deg, 0%, 0%);
+}
+.index-header div button .index-button {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 100%);
+  transition: all 0.2s ease 0s;
+}
+.index-header div button .index-button:hover {
+  color: black;
 }
 
 .index-main {
