@@ -361,3 +361,345 @@ select {
     }
   }
 }
+// CONTACT
+.contact {
+  height: 50vh;
+  .contact-title {
+    background-color: $clr-main-contact;
+    @include flex-col-cen-cen;
+    h4 {
+      font-weight: $fw-700;
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: 0.13em;
+    }
+  }
+  .contact-links-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    .instagram {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .instagram-title {
+        display: flex;
+        img {
+          height: 24px;
+        }
+        h5 {
+          padding-left: 4px;
+          font-weight: $fw-300;
+          font-size: 22px;
+          line-height: 23px;
+          letter-spacing: 0.13em;
+          text-decoration: .5px underline black;
+        }
+      }
+      .instagram-links {
+        display: flex;
+        flex-direction: column;
+        a {
+          font-weight: $fw-300;
+          font-size: 18px;
+          line-height: 25px;
+          letter-spacing: 0.13em;
+          color: $clr-main-semi-dark;
+          transition: all 0.2s ease 0s;
+            &:hover {
+              color: $clr-main-dark;
+              font-weight: $fw-400;
+            }
+        }
+      }
+    }
+    .twitter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 50px;
+      .twitter-title {
+        display: flex;
+        img {
+          height: 24px;
+        }
+        h5 {
+          padding-left: 4px;
+          font-weight: $fw-300;
+          font-size: 22px;
+          line-height: 23px;
+          letter-spacing: 0.13em;
+          text-decoration: .5px underline black;
+        }
+      }
+      .twitter-links {
+        display: flex;
+        flex-direction: column;
+        a {
+          font-weight: $fw-300;
+          font-size: 18px;
+          line-height: 25px;
+          letter-spacing: 0.13em;
+          color: $clr-main-semi-dark;
+          transition: all 0.2s ease 0s;
+            &:hover {
+              color: $clr-main-dark;
+              font-weight: $fw-400;
+            }
+        }
+      }
+    }
+  }
+  .contact-links-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    .email {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .email-title {
+        display: flex;
+        img {
+          height: 24px;
+        }
+        h5 {
+          padding-left: 4px;
+          font-weight: $fw-300;
+          font-size: 22px;
+          line-height: 23px;
+          letter-spacing: 0.13em;
+          text-decoration: .5px underline black;
+        }
+      }
+      .email-links {
+        display: flex;
+        flex-direction: column;
+        a {
+          font-weight: $fw-300;
+          font-size: 18px;
+          line-height: 25px;
+          letter-spacing: 0.13em;
+          color: $clr-main-semi-dark;
+          transition: all 0.2s ease 0s;
+            &:hover {
+              color: $clr-main-dark;
+              font-weight: $fw-400;
+            }
+        }
+      }
+    }
+    .ubicacion {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 50px;
+      .ubicacion-title {
+        display: flex;
+        img {
+          height: 24px;
+        }
+        h5 {
+          padding-left: 4px;
+          font-weight: $fw-300;
+          font-size: 22px;
+          line-height: 23px;
+          letter-spacing: 0.13em;
+          text-decoration: .5px underline black;
+        }
+      }
+      .ubicacion-links {
+        display: flex;
+        flex-direction: column;
+        a {
+          font-weight: $fw-300;
+          font-size: 18px;
+          line-height: 25px;
+          letter-spacing: 0.13em;
+          color: $clr-main-semi-dark;
+          transition: all 0.2s ease 0s;
+            &:hover {
+              color: $clr-main-dark;
+              font-weight: $fw-400;
+            }
+        }
+      }
+    }
+  }
+  .contact-links-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    .wpp {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .wpp-title {
+        display: flex;
+        img {
+          height: 24px;
+        }
+        h5 {
+          padding-left: 4px;
+          font-weight: $fw-300;
+          font-size: 22px;
+          line-height: 23px;
+          letter-spacing: 0.13em;
+          text-decoration: .5px underline black;
+        }
+      }
+      .wpp-links {
+        display: flex;
+        flex-direction: column;
+        a {
+          font-weight: $fw-300;
+          font-size: 18px;
+          line-height: 25px;
+          letter-spacing: 0.13em;
+          color: $clr-main-semi-dark;
+          transition: all 0.2s ease 0s;
+            &:hover {
+              color: $clr-main-dark;
+              font-weight: $fw-400;
+            }
+        }
+      }
+    }
+  }
+}
+// CONTACT RESPONSIVE
+@media screen and (max-width: 1220px){
+  .contact {
+    .contact-title {
+      h4 {
+        font-size: 36px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 62em){
+  .contact {
+    .contact-title {
+      height: 250px;
+      text-align: center;
+    }
+    .contact-links-1 {
+      .instagram {
+        .instagram-title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 50px;
+        }
+        .instagram-links {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          a {
+            transition: all 0.2s ease 0s;
+            &:hover {
+              color: $clr-main-dark;
+              font-weight: $fw-400;
+            }
+          }
+        }
+      }
+    }
+    .twitter {
+      .twitter-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .twitter-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+          transition: all 0.2s ease 0s;
+          &:hover {
+            color: $clr-main-dark;
+            font-weight: $fw-400;
+          }
+        }
+      }
+    }
+    .contact-links-2 {
+      .email {
+        .email-title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 50px;
+        }
+        .email-links {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          a {
+            transition: all 0.2s ease 0s;
+            &:hover {
+              color: $clr-main-dark;
+              font-weight: $fw-400;
+            }
+          }
+        }
+      }
+      .ubicacion {
+        .ubicacion-title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .ubicacion-links {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          a {
+            transition: all 0.2s ease 0s;
+            &:hover {
+              color: $clr-main-dark;
+              font-weight: $fw-400;
+            }
+          }
+        }
+      }
+    }
+    .contact-links-3 {
+      .wpp {
+        .wpp-title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 50px;
+        }
+        .wpp-links {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 50px;
+          a {
+            transition: all 0.2s ease 0s;
+            &:hover {
+              color: $clr-main-dark;
+              font-weight: $fw-400;
+            }
+          }
+        }
+      }
+    }
+  }
+}

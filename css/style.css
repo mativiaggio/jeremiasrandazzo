@@ -386,4 +386,332 @@ select {
   font-size: 16px;
   text-align: center;
   letter-spacing: 0.1em;
+}
+
+.contact {
+  height: 50vh;
+}
+.contact .contact-title {
+  background-color: hsl(0deg, 0%, 88%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact-title h4 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.13em;
+}
+.contact .contact-links-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+}
+.contact .contact-links-1 .instagram {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact .contact-links-1 .instagram .instagram-title {
+  display: flex;
+}
+.contact .contact-links-1 .instagram .instagram-title img {
+  height: 24px;
+}
+.contact .contact-links-1 .instagram .instagram-title h5 {
+  padding-left: 4px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 23px;
+  letter-spacing: 0.13em;
+  -webkit-text-decoration: 0.5px underline black;
+          text-decoration: 0.5px underline black;
+}
+.contact .contact-links-1 .instagram .instagram-links {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-links-1 .instagram .instagram-links a {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.13em;
+  color: hsl(0deg, 0%, 38%);
+  transition: all 0.2s ease 0s;
+}
+.contact .contact-links-1 .instagram .instagram-links a:hover {
+  color: hsl(0deg, 0%, 0%);
+  font-weight: 400;
+}
+.contact .contact-links-1 .twitter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+.contact .contact-links-1 .twitter .twitter-title {
+  display: flex;
+}
+.contact .contact-links-1 .twitter .twitter-title img {
+  height: 24px;
+}
+.contact .contact-links-1 .twitter .twitter-title h5 {
+  padding-left: 4px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 23px;
+  letter-spacing: 0.13em;
+  -webkit-text-decoration: 0.5px underline black;
+          text-decoration: 0.5px underline black;
+}
+.contact .contact-links-1 .twitter .twitter-links {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-links-1 .twitter .twitter-links a {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.13em;
+  color: hsl(0deg, 0%, 38%);
+  transition: all 0.2s ease 0s;
+}
+.contact .contact-links-1 .twitter .twitter-links a:hover {
+  color: hsl(0deg, 0%, 0%);
+  font-weight: 400;
+}
+.contact .contact-links-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+}
+.contact .contact-links-2 .email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact .contact-links-2 .email .email-title {
+  display: flex;
+}
+.contact .contact-links-2 .email .email-title img {
+  height: 24px;
+}
+.contact .contact-links-2 .email .email-title h5 {
+  padding-left: 4px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 23px;
+  letter-spacing: 0.13em;
+  -webkit-text-decoration: 0.5px underline black;
+          text-decoration: 0.5px underline black;
+}
+.contact .contact-links-2 .email .email-links {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-links-2 .email .email-links a {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.13em;
+  color: hsl(0deg, 0%, 38%);
+  transition: all 0.2s ease 0s;
+}
+.contact .contact-links-2 .email .email-links a:hover {
+  color: hsl(0deg, 0%, 0%);
+  font-weight: 400;
+}
+.contact .contact-links-2 .ubicacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+.contact .contact-links-2 .ubicacion .ubicacion-title {
+  display: flex;
+}
+.contact .contact-links-2 .ubicacion .ubicacion-title img {
+  height: 24px;
+}
+.contact .contact-links-2 .ubicacion .ubicacion-title h5 {
+  padding-left: 4px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 23px;
+  letter-spacing: 0.13em;
+  -webkit-text-decoration: 0.5px underline black;
+          text-decoration: 0.5px underline black;
+}
+.contact .contact-links-2 .ubicacion .ubicacion-links {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-links-2 .ubicacion .ubicacion-links a {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.13em;
+  color: hsl(0deg, 0%, 38%);
+  transition: all 0.2s ease 0s;
+}
+.contact .contact-links-2 .ubicacion .ubicacion-links a:hover {
+  color: hsl(0deg, 0%, 0%);
+  font-weight: 400;
+}
+.contact .contact-links-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+}
+.contact .contact-links-3 .wpp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact .contact-links-3 .wpp .wpp-title {
+  display: flex;
+}
+.contact .contact-links-3 .wpp .wpp-title img {
+  height: 24px;
+}
+.contact .contact-links-3 .wpp .wpp-title h5 {
+  padding-left: 4px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 23px;
+  letter-spacing: 0.13em;
+  -webkit-text-decoration: 0.5px underline black;
+          text-decoration: 0.5px underline black;
+}
+.contact .contact-links-3 .wpp .wpp-links {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-links-3 .wpp .wpp-links a {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.13em;
+  color: hsl(0deg, 0%, 38%);
+  transition: all 0.2s ease 0s;
+}
+.contact .contact-links-3 .wpp .wpp-links a:hover {
+  color: hsl(0deg, 0%, 0%);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1220px) {
+  .contact .contact-title h4 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 62em) {
+  .contact .contact-title {
+    height: 250px;
+    text-align: center;
+  }
+  .contact .contact-links-1 .instagram .instagram-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .contact .contact-links-1 .instagram .instagram-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .contact-links-1 .instagram .instagram-links a {
+    transition: all 0.2s ease 0s;
+  }
+  .contact .contact-links-1 .instagram .instagram-links a:hover {
+    color: hsl(0deg, 0%, 0%);
+    font-weight: 400;
+  }
+  .contact .twitter .twitter-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .twitter .twitter-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .twitter .twitter-links a {
+    transition: all 0.2s ease 0s;
+  }
+  .contact .twitter .twitter-links a:hover {
+    color: hsl(0deg, 0%, 0%);
+    font-weight: 400;
+  }
+  .contact .contact-links-2 .email .email-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .contact .contact-links-2 .email .email-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .contact-links-2 .email .email-links a {
+    transition: all 0.2s ease 0s;
+  }
+  .contact .contact-links-2 .email .email-links a:hover {
+    color: hsl(0deg, 0%, 0%);
+    font-weight: 400;
+  }
+  .contact .contact-links-2 .ubicacion .ubicacion-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .contact-links-2 .ubicacion .ubicacion-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .contact-links-2 .ubicacion .ubicacion-links a {
+    transition: all 0.2s ease 0s;
+  }
+  .contact .contact-links-2 .ubicacion .ubicacion-links a:hover {
+    color: hsl(0deg, 0%, 0%);
+    font-weight: 400;
+  }
+  .contact .contact-links-3 .wpp .wpp-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .contact .contact-links-3 .wpp .wpp-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .contact .contact-links-3 .wpp .wpp-links a {
+    transition: all 0.2s ease 0s;
+  }
+  .contact .contact-links-3 .wpp .wpp-links a:hover {
+    color: hsl(0deg, 0%, 0%);
+    font-weight: 400;
+  }
 }/*# sourceMappingURL=style.css.map */
