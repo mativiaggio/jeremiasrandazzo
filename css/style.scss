@@ -163,6 +163,7 @@ select {
     @media screen and (max-width: 62em){
       margin-top: 0;
       width: $w-100;
+      margin-top: $m-nv-m;
       @include flex-custom(column, flex-start, center)
     }
     .text-container {
@@ -185,6 +186,177 @@ select {
         @media screen and (max-width: 62em){
           text-align: center;
         }
+      }
+    }
+  }
+}
+// GALLERY TITLE
+.gallery-title {
+  @include flex-col-cen-cen;
+  .mis-proyectos {
+    margin-top: $m-nv;
+    height: 11.75em;
+    background-color: $clr-accent-dark;
+    @include flex-col-cen-cen;
+    h2 {
+      color: $clr-main-light;
+      letter-spacing: .1em;
+      font-weight: $fw-300;
+      font-size: 48px;
+      @media screen and (max-width: 62em){
+        font-size: 36px;
+      }
+    }
+  }
+}
+// GALLERY
+.galeria {
+  background-color: $clr-main-ultra-light;
+
+  .section1 {
+    .flower-text-container {
+      @include flex-col-cen-cen;
+      padding-left: 5%;
+
+      @media screen and (max-width: 62em){
+        height: 350px;
+      }
+      .flower-title {
+        width: 100%;
+        h3 {
+          font-weight: $fw-700;
+          font-size: 40px;
+          letter-spacing: 0.13em;
+          @media screen and (max-width: 62em){
+            text-align: center;
+          }
+        }
+      }
+      .flower-p {
+        p {
+          font-weight: $fw-300;
+          font-size: 16px;
+          letter-spacing: 0.1em;
+          color: $clr-main-semi-dark;
+          @media screen and (max-width: 62em){
+            text-align: center;
+          }
+        }
+      }
+    }
+    .button-container {
+      width: 100%;
+      @media screen and (max-width: 62em){
+        text-align: center;
+      }
+      .seguir-leyendo {
+        background-color: $clr-accent-dark;
+        border-color: $clr-accent-dark;
+        border-radius: 0;
+  
+  
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+  .section2 {
+    .feli-text-container {
+      @include flex-col-cen-cen;
+      padding-left: 5%;
+
+      @media screen and (max-width: 62em){
+        height: 350px;
+      }
+      .feli-title {
+        width: 100%;
+        h3 {
+          font-weight: $fw-700;
+          font-size: 40px;
+          letter-spacing: 0.13em;
+          @media screen and (max-width: 62em){
+            text-align: center;
+          }
+        }
+      }
+      .feli-p {
+        p {
+          font-weight: $fw-300;
+          font-size: 16px;
+          letter-spacing: 0.1em;
+          color: $clr-main-semi-dark;
+          @media screen and (max-width: 62em){
+            text-align: center;
+          }
+        }
+      }
+    }
+    .button-container {
+      width: 100%;
+      @media screen and (max-width: 62em){
+        text-align: center;
+      }
+      .seguir-leyendo {
+        background-color: $clr-accent-dark;
+        border-color: $clr-accent-dark;
+        border-radius: 0;
+  
+  
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+  .section3 {
+    .fotografos-text-container {
+      @include flex-col-cen-cen;
+      padding-left: 5%;
+
+      @media screen and (max-width: 62em){
+        height: 350px;
+      }
+      .fotografos-title {
+        width: 100%;
+        h3 {
+          font-weight: $fw-700;
+          font-size: 40px;
+          letter-spacing: 0.13em;
+          @media screen and (max-width: 62em){
+            text-align: center;
+          }
+        }
+      }
+      .fotografos-p {
+        p {
+          font-weight: $fw-300;
+          font-size: 16px;
+          letter-spacing: 0.1em;
+          color: $clr-main-semi-dark;
+          @media screen and (max-width: 62em){
+            text-align: center;
+          }
+        }
+      }
+    }
+    .button-container {
+      width: 100%;
+      @media screen and (max-width: 62em){
+        text-align: center;
+      }
+      .seguir-leyendo {
+        background-color: $clr-accent-dark;
+        border-color: $clr-accent-dark;
+        border-radius: 0;
+  
+  
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.1em;
       }
     }
   }
