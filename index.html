@@ -30,10 +30,10 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0 ms-auto navbar_container text-center">
                       <li class="nav-item">
-                        <a class="nav-link active nav_link" aria-current="page" href="#sobre-mi">SOBRE MI</a>
+                        <a class="nav-link active nav_link nav-sobre-mi" aria-current="page" href="#sobre-mi">SOBRE MI</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active nav_link" aria-current="page" href="#galeria">GALERIA</a>
+                        <a class="nav-link active nav_link nav-galeria" aria-current="page" href="#galeria">GALERIA</a>
                       </li>
                       <li class="nav-item nav-contacto">
                         <a class="nav-link active nav_link nav-contacto" aria-current="page" href="#contacto">CONTACTO</a>
@@ -204,10 +204,17 @@
     </script>
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- JS NAVBAR ON SCROLL -->
     <script>
-      $(window).scroll(function(){
-    $('nav').toggleClass('scrolled',$(this).scrollTop()>50);
-      });
+      const nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', () => {
+          if (window.scrollY >= 50) {
+              nav.classList.add('active_nav');
+          } else {
+              nav.classList.remove('active_nav');
+          }
+      })
     </script>
 </body>
 </html>

@@ -69,8 +69,10 @@ nav #navbarSupportedContent {
   transition: all 0.2s ease 0s;
 }
 
-.bgcolor.scrolled {
-  background-color: black !important;
+.active_nav {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease 0s;
 }
 
 .nav_logo {
@@ -87,8 +89,31 @@ nav #navbarSupportedContent {
   padding-right: 5px !important;
 }
 
+.nav-sobre-mi {
+  border: 4px solid rgba(255, 255, 255, 0);
+}
+.nav-sobre-mi:hover {
+  background-color: white;
+  border-color: white;
+  color: black !important;
+}
+
+.nav-galeria {
+  border: 4px solid rgba(255, 255, 255, 0);
+}
+.nav-galeria:hover {
+  background-color: white;
+  border-color: white;
+  color: black !important;
+}
+
 .nav-contacto {
   background-color: hsl(356deg, 83%, 41%);
+  border: 2px solid hsl(356deg, 83%, 41%);
+}
+.nav-contacto:hover {
+  background-color: hsl(356deg, 79%, 54%);
+  border-color: hsl(356deg, 79%, 54%);
 }
 
 /* Remove border from toggler */
