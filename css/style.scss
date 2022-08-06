@@ -688,6 +688,7 @@ nav {
 }
 @media screen and (max-width: 62em){
   .contact {
+    height: 200vh;
     .contact-title {
       height: 250px;
       text-align: center;
@@ -807,5 +808,98 @@ nav {
         }
       }
     }
+  }
+}
+// INICIO BUTTON
+.home-button-container {
+  background-color: $clr-accent-dark;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h6 {
+    font-weight: $fw-600;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.13em;
+    a {
+      display: flex;
+      text-decoration: none;
+      color: $clr-main-light;
+      .arrow-img {
+        height: 40px;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
+// FOOTER
+.footer {
+  height: 50vh;
+  background-color: $clr-main-dark;
+  .footer-navbar {
+    display: flex;
+    justify-content: space-around;
+    height: 5em;
+    li {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        text-decoration: none;
+        color: $clr-main-light;
+        font-weight: $fw-300;
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 0.13em;
+        text-decoration-line: underline;
+        transition: .15s ease-in;
+        &:hover {
+          color: $clr-accent-dark
+        }
+      }
+    }
+  }
+  .footer-credits {
+    height: 4em;
+    p {
+      color: $clr-main-light;
+      font-weight: $fw-300;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.13em;
+    }
+  }
+  .soc-m-cred {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .linkedin {
+      height: 50px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .github {
+      height: 50px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .instagram {
+      height: 50px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  .footer-copyright {
+    height: 6em;
+    @include flex-col-cen-cen;
+    p {
+      color: $clr-main-light;
+      font-weight: $fw-300;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.13em;
+     }
   }
 }
