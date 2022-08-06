@@ -729,7 +729,7 @@ nav #navbarSupportedContent {
 }
 @media screen and (max-width: 62em) {
   .contact {
-    height: 200vh;
+    height: 150vh;
   }
   .contact .contact-title {
     height: 250px;
@@ -862,10 +862,29 @@ nav #navbarSupportedContent {
   height: 50vh;
   background-color: hsl(0deg, 0%, 0%);
 }
+@media screen and (max-width: 62em) {
+  .footer {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .footer .footer-navbar {
   display: flex;
   justify-content: space-around;
   height: 5em;
+  padding-left: 0;
+}
+@media screen and (max-width: 62em) {
+  .footer .footer-navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+  }
 }
 .footer .footer-navbar li {
   list-style: none;

@@ -688,7 +688,7 @@ nav {
 }
 @media screen and (max-width: 62em){
   .contact {
-    height: 200vh;
+    height: 150vh;
     .contact-title {
       height: 250px;
       text-align: center;
@@ -837,10 +837,25 @@ nav {
 .footer {
   height: 50vh;
   background-color: $clr-main-dark;
+  @media screen and (max-width: 62em){
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .footer-navbar {
     display: flex;
     justify-content: space-around;
     height: 5em;
+    padding-left: 0;
+    @media screen and (max-width: 62em){
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 8em;
+    }
     li {
       list-style: none;
       display: flex;
